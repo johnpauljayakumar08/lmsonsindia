@@ -23,6 +23,7 @@ import {
   Clock,
   Award
 } from 'lucide-react';
+import logo from './assets/onslogo.png';
 import { 
   BarChart, 
   Bar, 
@@ -409,10 +410,11 @@ export default function App() {
           className="bg-white w-full max-w-md p-8 rounded-3xl shadow-xl border border-slate-100"
         >
           <div className="flex flex-col items-center mb-8">
-            <div className="bg-indigo-600 p-4 rounded-2xl mb-4 shadow-lg shadow-indigo-200">
+            {/* <div className="bg-indigo-600 p-4 rounded-2xl mb-4 shadow-lg shadow-indigo-200">
               <GraduationCap size={40} className="text-white" />
             </div>
-            <h1 className="text-2xl font-bold text-slate-800">EduPro LMS</h1>
+            <h1 className="text-2xl font-bold text-slate-800">EduPro LMS</h1> */}
+            <img src={logo} alt="EduPro Logo" className="w-30 h-30 mb-4" />
             <p className="text-slate-500 text-sm">Sign in to your account</p>
           </div>
 
@@ -478,10 +480,7 @@ export default function App() {
       {/* Sidebar */}
       <aside className="w-72 bg-white border-r border-slate-200 flex flex-col hidden lg:flex">
         <div className="p-6 border-bottom border-slate-100 flex items-center gap-3">
-          <div className="bg-indigo-600 p-2 rounded-lg">
-            <GraduationCap size={24} className="text-white" />
-          </div>
-          <span className="font-bold text-xl text-slate-800">EduPro</span>
+         <img src={logo} alt="EduPro Logo" className="w-30 h-30 mb-4" />
         </div>
 
         <nav className="flex-1 p-4 space-y-2">
